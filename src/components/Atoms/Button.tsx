@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 
 interface ButtonProps {
@@ -20,8 +21,8 @@ const Button = ({ text, colorType = "default", onClick }: ButtonProps) => {
       className={`active:text-font-dark active:bg-font-light
         active:border-font-dark border border-solid rounded-full
         text-sm px-3 py-2 border-primary-light outline outline-transparent
-        pl-7 pr-7 m-1
-      hover:text-font-light hover:border-transparent hover:outline-font-light
+        pl-7 pr-7 h-10
+        hover:text-font-light hover:border-transparent hover:border-font-light
         ${colorScheme}`}
     >
       {text}

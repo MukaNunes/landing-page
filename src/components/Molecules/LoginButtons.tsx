@@ -1,7 +1,8 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import React from "react";
-import Button from "../Atoms/Button";
+import Button from "@/components/Atoms/Button";
 
 const LoginButtons = () => {
   const router = useRouter();
