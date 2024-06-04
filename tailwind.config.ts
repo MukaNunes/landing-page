@@ -7,22 +7,29 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		colors: {
-			back: {
-				dark: "#101310",
-				light: "#1F241F",
+		extend: {
+			colors: {
+				back: {
+					dark: "#101310",
+					light: "#1F241F",
+				},
+				primary: {
+					light: "#01FE84",
+					dark: "#109051",
+				},
+				font: {
+					light: "#FFFFFF",
+					default: "#868F8A",
+					dark: "#4C4E4C",
+				},
 			},
-			primary: {
-				light: "#01FE84",
-				dark: "#109051",
+			boxShadow: {
+				'3xl': '0px 0px 60px 0px',
 			},
-			font: {
-				light: "#FFFFFF",
-				default: "#868F8A",
-				dark: "#4C4E4C",
-			},
+			fontSize: {
+				ct: '0.7rem',
+			}
 		},
-		extend: {},
 	},
 	plugins: [],
 };

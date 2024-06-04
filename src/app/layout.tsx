@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import LandingHeader from "@/components/Molecules/LandingHeader";
 
 export const metadata: Metadata = {
   title: "LearnToLearn",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen">
+        <LandingHeader />
+        <section className="flex-grow flex-col">{children}</section>
+        <footer>Footer</footer>
+      </body>
     </html>
   );
 }
