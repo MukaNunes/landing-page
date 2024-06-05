@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen overflow-scroll overflow-x-hidden">
         <LandingHeader />
         <section className="flex flex-grow flex-col pl-10 pr-10">
           {children}

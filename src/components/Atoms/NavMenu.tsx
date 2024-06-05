@@ -7,7 +7,7 @@ const IsActive = (route: string) => {
   return usePathname() === route ? "active" : "";
 };
 
-const NavMenu = () => {
+export default function NavMenu() {
   return (
     <ul className="navMenu text-ct grow mt-1 flex justify-center space-x-10">
       <li>
@@ -37,6 +37,4 @@ const NavMenu = () => {
       </li>
     </ul>
   );
-};
-
-export default NavMenu;
+}

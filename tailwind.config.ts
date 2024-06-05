@@ -12,6 +12,7 @@ const config: Config = {
 				back: {
 					dark: "#101310",
 					light: "#1F241F",
+					card: "#313631",
 				},
 				primary: {
 					light: "#01FE84",

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const Brand = () => {
+export default function Brand() {
   return (
     <Image
       src={`/brand/logo.png`}
@@ -12,6 +12,4 @@ const Brand = () => {
       className="m-2"
     />
   );
-};
-
-export default Brand;
+}

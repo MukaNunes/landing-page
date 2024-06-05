@@ -9,12 +9,12 @@ interface InputProps {
   actionButton?: ReactElement;
 }
 
-const Input = ({
+export default function Input({
   name,
   colorType = "light",
   placeHolder = "",
   actionButton = undefined,
-}: InputProps) => {
+}: Readonly<InputProps>) {
   const colorScheme =
     colorType === "light"
       ? "text-font-light bg-back-dark placeholder-primary-light border-primary-light"
@@ -33,6 +33,4 @@ const Input = ({
       {actionButton}
     </div>
   );
-};
-
-export default Input;
+}
